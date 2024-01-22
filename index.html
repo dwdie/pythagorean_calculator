@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algorithm</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Pythagorean theorem</h1>
+    <p>The formula for Pythagoras' theorem is a² + b² = c². In this equation, “C” represents the longest side of a right triangle, called the hypotenuse. “A” and “B” represent the other two sides of the triangle.</p>
+    <button onclick="
+
+    var opp = window.prompt('Opposite site : ');
+        var adj = window.prompt('Adjacent site : ');
+        let hyp_square =  opp**2 + adj**2;
+        let ans = Math.sqrt(hyp_square);
+        alert(`Hypotenuse is : ${ans}`);
+    " class="h">Hypotenuse</button>
+    <button onclick="
+    var opp = window.prompt('Opposite site : ');
+        var hyp = window.prompt('Hypotenuse : ');
+        let adj_square =  hyp**2 - opp**2;
+        let ans = Math.sqrt(adj_square);
+        let final = Math.round(ans);
+        alert(`Adjacent side is : ${final}`);
+    " class="o">Adjacent side</button>
+    <button onclick="
+    var adj = window.prompt('Adjacent site : ');
+        var hyp = window.prompt('Hypotenuse : ');
+        let opp_square =  hyp**2 - adj**2;
+        let ans = Math.sqrt(opp_square);
+        let final = Math.round(ans);
+        alert(`Opposite side is : ${final}`);
+    " class="a">Opposite side</button>
+</body>
+</html>
